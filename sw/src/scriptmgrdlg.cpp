@@ -34,7 +34,7 @@
 *  % Description: Test script launcher dialog proc callback implementation.
 *  % Returns:     TRUE if message was handled, FALSE otherwise.
 ***************************************************************************************************/
-BOOL CALLBACK ScriptMgr::TestScriptDlgProc(
+INT_PTR CALLBACK ScriptMgr::TestScriptDlgProc(
     HWND   hWndDlg,  // handle to the dialog box
     UINT   msg,      // message
     WPARAM wParam,   // message-specific information

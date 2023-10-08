@@ -363,7 +363,7 @@ const TCHAR* NesDbg::GetMessageBoxTitle()
 *  % Description: Raw Debug dialog proc callback implementation.
 *  % Returns:     TRUE if message was handled, FALSE otherwise.
 ***************************************************************************************************/
-BOOL CALLBACK NesDbg::RawDbgDlgProc(
+INT_PTR CALLBACK NesDbg::RawDbgDlgProc(
     HWND   hWndDlg,  // handle to the dialog box
     UINT   msg,      // message
     WPARAM wParam,   // message-specific information
@@ -486,7 +486,7 @@ BOOL CALLBACK NesDbg::RawDbgDlgProc(
 *  % Description: Modeless dialog to show progress of ROM loads.
 *  % Returns:     TRUE if message was handled, FALSE otherwise.
 ***************************************************************************************************/
-BOOL CALLBACK NesDbg::RomLoadProgressDlgProc(
+INT_PTR CALLBACK NesDbg::RomLoadProgressDlgProc(
     HWND   hWndDlg,  // handle to the dialog box
     UINT   msg,      // message
     WPARAM wParam,   // message-specific information

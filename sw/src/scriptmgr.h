@@ -55,7 +55,7 @@ public:
 
     BOOL Init();
 
-    static BOOL CALLBACK TestScriptDlgProc(HWND hWndDlg, UINT msg, WPARAM wParam, LPARAM lParam);
+    static INT_PTR CALLBACK TestScriptDlgProc(HWND hWndDlg, UINT msg, WPARAM wParam, LPARAM lParam);
 
 private:
     ScriptMgr& operator=(const ScriptMgr&);

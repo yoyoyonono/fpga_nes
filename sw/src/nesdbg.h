@@ -62,8 +62,8 @@ private:
     NesDbg& operator=(const NesDbg&);
     NesDbg(const NesDbg&);
 
-    static BOOL CALLBACK RawDbgDlgProc(HWND hWndDlg, UINT msg, WPARAM wParam, LPARAM lParam);
-    static BOOL CALLBACK RomLoadProgressDlgProc(
+    static INT_PTR CALLBACK RawDbgDlgProc(HWND hWndDlg, UINT msg, WPARAM wParam, LPARAM lParam);
+    static INT_PTR CALLBACK RomLoadProgressDlgProc(
         HWND   hWndDlg,
         UINT   msg,
         WPARAM wParam,

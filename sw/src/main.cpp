@@ -28,6 +28,8 @@
 #include "nesdbg.h"
 #include "resource.h"
 
+extern "C" { FILE __iob_func[3] = { *stdin,*stdout,*stderr }; }
+
 NesDbg* g_pNesDbg = NULL;
 
 /***************************************************************************************************
